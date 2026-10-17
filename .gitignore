@@ -12,6 +12,9 @@ frontend/dist/
 backend/uploads/
 uploads/
 
+# Runtime logs
+*.log
+
 # IDE
 .idea/
 *.iml
