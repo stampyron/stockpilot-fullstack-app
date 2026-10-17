@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: stockpilot-db
+    environment:
+      POSTGRES_DB: stockpilot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - stockpilot-data:/var/lib/postgresql/data
+
+volumes:
+  stockpilot-data:
